@@ -139,7 +139,7 @@
         app:srcCompat="@drawable/flower" />
 
     <include
-        android:id="@+id/include3"
+        android:id="@+id/include4"
         layout="@layout/activity_navigation_bar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
