@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Payment">
+
+    <EditText
+        android:id="@+id/cardholdersName"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterCvvText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterCardholderText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/cancelPayment"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="60dp"
+        android:background="@drawable/buttons"
+        android:text="Cancel"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
+        android:id="@+id/cvv"
+        android:layout_width="116dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterEmailText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/exp"
+        app:layout_constraintTop_toBottomOf="@+id/enterCvvText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/enterCvvText"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:text="CVV:"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cvv"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/enterExpText"
+        app:layout_constraintTop_toBottomOf="@+id/cardholdersName"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/enterExpText"
+        android:layout_width="110dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="EXP:"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/exp"
+        app:layout_constraintEnd_toStartOf="@+id/enterCvvText"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardholdersName"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/enterEmailText"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Enter email:"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailPay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/exp"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/enterCardholderText"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Enter Cardholders Name:"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardholdersName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardNumber" />
+
+    <TextView
+        android:id="@+id/payementTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="110dp"
+        android:layout_marginBottom="24dp"
+        android:text="Payment"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/enterCardText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/enterCardText"
+        android:layout_width="290dp"
+        android:layout_height="wrap_content"
+        android:text="Enter Card Number:"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/cardNumber"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/payementTopic"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/cardNumber"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterCardholderText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterCardText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/emailPay"
+        android:layout_width="290dp"
+        android:layout_height="45dp"
+        android:layout_marginBottom="40dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/submitPayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterEmailText" />
+
+    <EditText
+        android:id="@+id/exp"
+        android:layout_width="116dp"
+        android:layout_height="45dp"
+        android:ems="10"
+        android:inputType="date"
+        android:textColor="#575151"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/enterEmailText"
+        app:layout_constraintEnd_toStartOf="@+id/cvv"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/enterExpText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/submitPayment"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/buttons"
+        android:text="Submit"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/cancelPayment"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+
+    <include layout="@layout/activity_navigation_bar"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

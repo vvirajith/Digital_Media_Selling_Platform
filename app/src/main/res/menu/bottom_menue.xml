@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Home"
+        android:icon="@drawable/iconhome"
+        android:id="@+id/firstFragment"
+        />
+
+    <item
+        android:title="Cart"
+        android:icon="@drawable/iconcart"
+        android:id="@+id/secondFragment"
+        />
+
+
+    <item
+        android:title="Notifications"
+        android:icon="@drawable/iconnotification"
+        android:id="@+id/thirdFragment"
+        />
+
+
+    <item
+        android:title="Account"
+        android:icon="@drawable/iconprofile"
+        android:id="@+id/forthFragment">
+
+    </item>
+
+
+</menu>
