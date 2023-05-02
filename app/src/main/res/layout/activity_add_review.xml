@@ -11,7 +11,7 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
-        android:text="Item Name:   Test item 01"
+        android:text="@string/item_name_test_item_01"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/ratingBar"
@@ -24,7 +24,7 @@
         android:layout_width="250dp"
         android:layout_height="40dp"
         android:layout_marginBottom="16dp"
-        android:text="Item ID:           #123"
+        android:text="@string/item_id_123"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView20"
@@ -39,7 +39,7 @@
         android:layout_marginStart="140dp"
         android:layout_marginTop="100dp"
         android:layout_marginBottom="32dp"
-        android:text="Add Review"
+        android:text="@string/add_review"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textSize="34sp"
         android:textStyle="bold"
@@ -55,7 +55,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="32dp"
         android:background="@drawable/buttons"
-        android:text="Submit"
+        android:text="@string/submit"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/cancelReviewButton"
         app:layout_constraintEnd_toEndOf="parent"
@@ -78,9 +78,10 @@
     <EditText
         android:id="@+id/reviewField1"
         android:layout_width="279dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="28dp"
         android:ems="10"
+        android:hint="I think....."
         android:inputType="textPersonName"
         android:textColor="#575151"
         android:textSize="20sp"
@@ -103,9 +104,17 @@
 
     <RatingBar
         android:id="@+id/ratingBar"
+        style="@style/Widget.AppCompat.RatingBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="8dp"
+        android:backgroundTint="@color/dark_purple"
+        android:contentDescription="ratingbar"
+        android:contextClickable="false"
+        android:labelFor="@id/include4"
+        android:max="5"
+        android:numStars="5"
+        android:rating="5"
         app:layout_constraintBottom_toTopOf="@+id/textView18"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
@@ -139,7 +148,7 @@
         app:srcCompat="@drawable/flower" />
 
     <include
-        android:id="@+id/include3"
+        android:id="@+id/include4"
         layout="@layout/activity_navigation_bar" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
