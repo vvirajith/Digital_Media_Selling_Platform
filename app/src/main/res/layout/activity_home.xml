@@ -28,7 +28,7 @@
         <TextView
             android:id="@+id/textView65"
             android:layout_width="180dp"
-            android:layout_height="44dp"
+            android:layout_height="48dp"
             android:layout_marginBottom="40dp"
             android:text="@string/lorem_ipsum"
             android:textAlignment="center"
@@ -54,7 +54,7 @@
         <EditText
             android:id="@+id/editTextTextPersonName4"
             android:layout_width="match_parent"
-            android:layout_height="38dp"
+            android:layout_height="48dp"
             android:layout_marginTop="100dp"
             android:layout_marginBottom="24dp"
             app:layout_constraintBottom_toTopOf="@+id/textView32"
@@ -184,7 +184,7 @@
         <Button
             android:id="@+id/button6"
             android:layout_width="300dp"
-            android:layout_height="40dp"
+            android:layout_height="48dp"
             android:layout_marginTop="200dp"
             android:layout_marginBottom="12dp"
             android:background="@drawable/buttons"

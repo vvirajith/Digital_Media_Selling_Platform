@@ -196,7 +196,7 @@
                                 <EditText
                                     android:id="@+id/shopFNameDisplay"
                                     android:layout_width="100dp"
-                                    android:layout_height="wrap_content"
+                                    android:layout_height="match_parent"
                                     android:layout_below="@+id/shopNameDisplay"
                                     android:ems="10"
                                     android:inputType="textPersonName"

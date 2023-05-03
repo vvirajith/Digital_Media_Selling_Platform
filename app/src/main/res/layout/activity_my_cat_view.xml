@@ -88,7 +88,7 @@
             <Button
                 android:id="@+id/button15"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
 
                 android:layout_marginRight="20dp"
                 android:text="Update" />
@@ -96,7 +96,7 @@
             <Button
                 android:id="@+id/button"
                 android:layout_width="45dp"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:text="Delete"
                 tools:layout_editor_absoluteX="210dp"
                 tools:layout_editor_absoluteY="547dp" />
@@ -125,7 +125,7 @@
             <Button
                 android:id="@+id/button16"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_marginRight="20dp"
                 android:text="Update"
                 tools:layout_editor_absoluteX="142dp"
@@ -134,7 +134,7 @@
             <Button
                 android:id="@+id/button3"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:text="Delete"
                 tools:layout_editor_absoluteX="214dp"
                 tools:layout_editor_absoluteY="349dp" />
@@ -163,7 +163,7 @@
             <Button
                 android:id="@+id/button17"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_marginRight="20dp"
                 android:text="Update"
                 tools:layout_editor_absoluteX="77dp"
@@ -172,7 +172,7 @@
             <Button
                 android:id="@+id/button11"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:text="Delete"
                 tools:layout_editor_absoluteX="158dp"
                 tools:layout_editor_absoluteY="526dp" />
@@ -202,7 +202,7 @@
             <Button
                 android:id="@+id/button18"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_marginRight="20dp"
                 android:text="Update"
                 tools:layout_editor_absoluteX="236dp"
@@ -211,7 +211,7 @@
             <Button
                 android:id="@+id/button12"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:text="Delete"
                 tools:layout_editor_absoluteX="44dp"
                 tools:layout_editor_absoluteY="341dp" />
@@ -240,7 +240,7 @@
             <Button
                 android:id="@+id/button19"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:layout_marginRight="20dp"
                 android:text="Update"
                 tools:layout_editor_absoluteX="94dp"
@@ -249,7 +249,7 @@
             <Button
                 android:id="@+id/button13"
                 android:layout_width="wrap_content"
-                android:layout_height="45dp"
+                android:layout_height="48dp"
                 android:text="Delete"
                 tools:layout_editor_absoluteX="167dp"
                 tools:layout_editor_absoluteY="618dp" />

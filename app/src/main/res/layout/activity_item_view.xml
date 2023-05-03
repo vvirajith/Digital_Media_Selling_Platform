@@ -27,7 +27,7 @@
     <Button
         android:id="@+id/allReviewsButton"
         android:layout_width="140dp"
-        android:layout_height="38dp"
+        android:layout_height="48dp"
         android:layout_marginStart="24dp"
         android:layout_marginBottom="90dp"
         android:backgroundTint="#00FFFFFF"
@@ -111,6 +111,7 @@
         android:layout_width="189dp"
         android:layout_height="48dp"
         android:layout_marginStart="16dp"
+        android:contentDescription="rating bar"
         android:contextClickable="true"
         android:scrollbarSize="4dp"
         android:stepSize="5"
@@ -187,7 +188,12 @@
         tools:srcCompat="@tools:sample/backgrounds/scenic" />
 
 
-    <include layout="@layout/activity_navigation_bar"/>
+    <include
+        layout="@layout/activity_navigation_bar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 
 
