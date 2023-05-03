@@ -10,9 +10,8 @@
 
     <CheckBox
         android:id="@+id/regCheckBox"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
         android:layout_marginBottom="10dp"
         android:text="@string/terms_conditions"
         android:textColor="#575151"
@@ -21,7 +20,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
 
-        app:layout_constraintVertical_bias="1.0" />
+        />
 
     <Button
         android:id="@+id/regCusButton"
@@ -87,11 +86,12 @@
     <EditText
         android:id="@+id/sNameCus"
         android:layout_width="225dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="second name"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/emailCus"
         app:layout_constraintEnd_toEndOf="parent"
@@ -159,11 +159,12 @@
     <EditText
         android:id="@+id/fCusName"
         android:layout_width="225dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textPersonName"
+        android:text="first name"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/sNameCus"
         app:layout_constraintEnd_toEndOf="parent"
@@ -175,11 +176,12 @@
     <EditText
         android:id="@+id/emailCus"
         android:layout_width="225dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginEnd="40dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textEmailAddress"
+        android:text="email"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/passwordCus"
         app:layout_constraintEnd_toEndOf="parent"
@@ -191,11 +193,12 @@
     <EditText
         android:id="@+id/passwordCus"
         android:layout_width="225dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="40dp"
         android:ems="10"
         android:inputType="textPassword"
+        android:text="password"
         android:textSize="14sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
