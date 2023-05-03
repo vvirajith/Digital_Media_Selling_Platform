@@ -12,6 +12,9 @@
         android:theme="@style/Theme.MyApplication"
         tools:targetApi="31">
         <activity
+            android:name=".Blank"
+            android:exported="false" />
+        <activity
             android:name=".ViewItemAll"
             android:exported="false" />
         <activity
@@ -20,7 +23,6 @@
         <activity
             android:name=".CatView"
             android:exported="false" />
-
         <activity
             android:name=".NavigationBar"
             android:exported="false" />

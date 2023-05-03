@@ -3,27 +3,26 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mynav"
-    app:startDestination="@id/home2">
+    app:startDestination="@id/homepage">
 
 
-    <activity
-        android:id="@+id/home2"
-        android:name="com.example.myapplication.Home"
-        android:label="activity_home"
-        tools:layout="@layout/activity_home" />
-    <activity
+    <fragment
         android:id="@+id/notifications"
         android:name="com.example.myapplication.Notifications"
         android:label="fragment_notifications"
         tools:layout="@layout/fragment_notifications" />
-    <activity
-        android:id="@+id/profileCustomer"
-        android:name="com.example.myapplication.ProfileCustomer"
-        android:label="activity_profile_customer"
-        tools:layout="@layout/activity_profile_customer" />
-    <activity
-        android:id="@+id/cartAdd"
-        android:name="com.example.myapplication.CartAdd"
-        android:label="activity_cart_add"
-        tools:layout="@layout/activity_cart_add" />
+    <fragment
+        android:id="@+id/profile"
+        android:name="com.example.myapplication.Profile"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/cart"
+        android:name="com.example.myapplication.cart"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" />
+    <fragment
+        android:id="@+id/homepage"
+        android:name="com.example.myapplication.Homepage"
+        android:label="Homepage" />
 </navigation>

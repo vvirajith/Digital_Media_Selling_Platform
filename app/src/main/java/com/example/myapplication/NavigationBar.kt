@@ -13,8 +13,11 @@ class NavigationBar : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_navigation_bar)
 
-
-        val appBarConfiguration = AppBarConfiguration(setOf(R.id.home2, R.id.cartAdd,R.id.notifications, R.id.profileCustomer))
+        val bottomNavigationView = findViewById<BottomNavigationView>(R.id.bottomNavigationView)
+        val navController = findNavController(R.id.fragment)
+        val appBarConfiguration = AppBarConfiguration(setOf(R.id.homepage, R.id.cart,R.id.notifications, R.id.profile))
+        setupActionBarWithNavController(navController,appBarConfiguration)
+        bottomNavigationView.setupWithNavController(navController)
         
 
 
