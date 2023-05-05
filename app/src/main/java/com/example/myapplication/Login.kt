@@ -18,7 +18,7 @@ class Login : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityLoginBinding.inflate(layoutInflater)
 
-        setContentView(R.layout.activity_login)
+        setContentView(binding.root)
         firebaseAuth = FirebaseAuth.getInstance()
 
         binding.signin.setOnClickListener{

@@ -16,7 +16,7 @@ class RegCustomer : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         binding = ActivityRegCustomerBinding.inflate(layoutInflater)
-        setContentView(R.layout.activity_reg_customer)
+        setContentView(binding.root)
 
         firebaseAuth = FirebaseAuth.getInstance()
 
