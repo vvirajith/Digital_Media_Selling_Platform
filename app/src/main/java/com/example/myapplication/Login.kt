@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.Toast
 import com.example.myapplication.databinding.ActivityLoginBinding
-import com.example.myapplication.databinding.ActivityRegCustomerBinding
 import com.google.firebase.auth.FirebaseAuth
 
 class Login : AppCompatActivity() {
@@ -35,7 +34,7 @@ class Login : AppCompatActivity() {
 
                     firebaseAuth.signInWithEmailAndPassword(email,pass).addOnCompleteListener{
                         if(it.isSuccessful){
-                            val intent = Intent(this, NavigationBar::class.java);
+                            val intent = Intent(this, NavigationBar::class.java)
                             startActivity(intent)
 
                         }else{
@@ -53,9 +52,9 @@ class Login : AppCompatActivity() {
 
 
 
-        val RegNow = findViewById<Button>(R.id.regNowButton);
+        val regNow = findViewById<Button>(R.id.regNowButton)
 
-        RegNow.setOnClickListener {
+        regNow.setOnClickListener {
             val nextPage = Intent(this, RegisterAs::class.java)
             startActivity(nextPage)
 
@@ -67,7 +66,7 @@ class Login : AppCompatActivity() {
     override fun onStart(){
         super.onStart()
         if(firebaseAuth.currentUser != null){
-            val intent = Intent(this, NavigationBar::class.java);
+            val intent = Intent(this, NavigationBar::class.java)
             startActivity(intent)
         }
 
