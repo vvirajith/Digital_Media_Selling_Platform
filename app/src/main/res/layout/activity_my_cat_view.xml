@@ -42,27 +42,8 @@
                 android:textSize="16sp"
                 android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView7"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="Update"
-                android:textAlignment="center"
-                android:textColor="#020202"
-                android:textSize="16sp"
-                android:textStyle="bold" />
 
-            <TextView
-                android:id="@+id/textView6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="Delete"
-                android:textAlignment="center"
-                android:textColor="#0E0D0D"
-                android:textSize="16sp"
-                android:textStyle="bold" />
+
         </TableRow>
 
         <TableRow
@@ -71,7 +52,7 @@
 
             <TextView
                 android:id="@+id/textView17"
-                android:layout_width="50dp"
+                android:layout_width="58dp"
                 android:layout_height="50dp"
                 android:padding="10sp"
                 android:text="#123"
@@ -91,169 +72,23 @@
                 android:layout_height="48dp"
 
                 android:layout_marginRight="20dp"
-                android:text="Update" />
-
-            <Button
-                android:id="@+id/button"
-                android:layout_width="45dp"
-                android:layout_height="48dp"
-                android:text="Delete"
-                tools:layout_editor_absoluteX="210dp"
-                tools:layout_editor_absoluteY="547dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:text="Add Item" />
 
             <TextView
-                android:id="@+id/textView73"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="#123"
-                android:textAlignment="center" />
-
+                android:background="@drawable/baseline_edit"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginRight="25dp"/>
             <TextView
-                android:id="@+id/textView72"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="Test2"
-                android:textAlignment="center" />
+                android:background="@drawable/baseline_delete"
+                android:layout_width="30dp"
+                android:layout_height="30dp"/>
 
-            <Button
-                android:id="@+id/button16"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginRight="20dp"
-                android:text="Update"
-                tools:layout_editor_absoluteX="142dp"
-                tools:layout_editor_absoluteY="558dp" />
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="Delete"
-                tools:layout_editor_absoluteX="214dp"
-                tools:layout_editor_absoluteY="349dp" />
-        </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView77"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="#454"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView76"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="Test3"
-                android:textAlignment="center" />
-
-            <Button
-                android:id="@+id/button17"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginRight="20dp"
-                android:text="Update"
-                tools:layout_editor_absoluteX="77dp"
-                tools:layout_editor_absoluteY="619dp" />
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="Delete"
-                tools:layout_editor_absoluteX="158dp"
-                tools:layout_editor_absoluteY="526dp" />
 
         </TableRow>
 
-        <TableRow
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView81"
-                android:layout_width="50dp"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="#234"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView80"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="Test4"
-                android:textAlignment="center" />
-
-            <Button
-                android:id="@+id/button18"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginRight="20dp"
-                android:text="Update"
-                tools:layout_editor_absoluteX="236dp"
-                tools:layout_editor_absoluteY="494dp" />
-
-            <Button
-                android:id="@+id/button12"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="Delete"
-                tools:layout_editor_absoluteX="44dp"
-                tools:layout_editor_absoluteY="341dp" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="50dp"
-            android:layout_height="match_parent">
-
-            <TextView
-                android:id="@+id/textView85"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="#456"
-                android:textAlignment="center" />
-
-            <TextView
-                android:id="@+id/textView84"
-                android:layout_width="40dp"
-                android:layout_height="wrap_content"
-                android:padding="10sp"
-                android:text="Test5"
-                android:textAlignment="center" />
-
-            <Button
-                android:id="@+id/button19"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:layout_marginRight="20dp"
-                android:text="Update"
-                tools:layout_editor_absoluteX="94dp"
-                tools:layout_editor_absoluteY="493dp" />
-
-            <Button
-                android:id="@+id/button13"
-                android:layout_width="wrap_content"
-                android:layout_height="48dp"
-                android:text="Delete"
-                tools:layout_editor_absoluteX="167dp"
-                tools:layout_editor_absoluteY="618dp" />
-        </TableRow>
 
     </TableLayout>
 

@@ -119,7 +119,9 @@
 
     <include
         android:id="@+id/include7"
-        layout="@layout/activity_navigation_bar" />
+        layout="@layout/activity_navigation_bar"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/imageView20"
