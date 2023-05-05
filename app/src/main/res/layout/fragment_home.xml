@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/white"
     android:backgroundTint="@color/white"
-    tools:context=".Home">
+    tools:context=".fragments.HomeFragment">
 
         <TextView
             android:id="@+id/textView64"
@@ -39,7 +39,7 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toEndOf="@+id/imageView13"
-          />
+            />
 
         <ImageView
             android:id="@+id/imageView13"
@@ -277,14 +277,18 @@
             app:layout_constraintStart_toStartOf="parent" />
 
 
+
         <include
             android:id="@+id/include2"
             layout="@layout/activity_navigation_bar"
+            android:layout_width="413dp"
+            android:layout_height="51dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.022"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.992" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

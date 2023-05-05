@@ -14,7 +14,7 @@ class Login : AppCompatActivity() {
         val submitLogin = findViewById<Button>(R.id.submitLoginButton)
 
         submitLogin.setOnClickListener {
-            val nextPage = Intent(this, Blank::class.java)
+            val nextPage = Intent(this, NavigationBar::class.java)
             startActivity(nextPage);
 
         }

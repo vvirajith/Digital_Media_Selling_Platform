@@ -4,27 +4,27 @@
     <item
         android:title="Home"
         android:icon="@drawable/iconhome"
-        android:id="@+id/homepage"
+        android:id="@+id/iconhome"
         />
 
     <item
         android:title="Cart"
         android:icon="@drawable/iconcart"
-        android:id="@+id/cart"
+        android:id="@+id/iconcart"
         />
 
 
     <item
         android:title="Notifications"
         android:icon="@drawable/iconnotification"
-        android:id="@+id/notifications"
+        android:id="@+id/iconnotification"
         />
 
 
     <item
         android:title="Account"
         android:icon="@drawable/iconprofile"
-        android:id="@+id/profile">
+        android:id="@+id/iconprofile">
 
     </item>
 
