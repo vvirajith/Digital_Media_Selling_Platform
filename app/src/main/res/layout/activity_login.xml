@@ -14,7 +14,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="100dp"
         android:background="@drawable/buttons"
-        android:backgroundTint="#00FFFFFF"
+        android:backgroundTint="@color/light_grey"
         android:text="@string/register_now"
         android:textAlignment="center"
         android:textColor="#000000"
@@ -23,60 +23,72 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintTop_toBottomOf="@+id/signin"
         app:layout_constraintVertical_bias="0.5" />
 
 
     <TextView
-        android:id="@+id/email"
+        android:id="@+id/emailText"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:text="@string/emailText"
         android:textColor="#575151"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/useranme"
+        app:layout_constraintBottom_toTopOf="@+id/email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/pname"
         app:layout_constraintVertical_bias="0.5" />
 
-    <EditText
-        android:id="@+id/useranme"
+    <com.google.android.material.textfield.TextInputEditText
+        android:id="@+id/email"
         android:layout_width="300dp"
         android:layout_height="49dp"
         android:background="@drawable/rounded_corner"
         android:backgroundTint="#e8e8e8"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="username"
         android:textColor="#575151"
         android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/password"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.504"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/email"
+        app:layout_constraintTop_toBottomOf="@+id/emailText"
         app:layout_constraintVertical_bias="0.5" />
 
-    <EditText
-        android:id="@+id/editTextPassword"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/passwordCusLayout"
         android:layout_width="300dp"
         android:layout_height="49dp"
-        android:background="@drawable/rounded_corner"
+
         android:backgroundTint="#54C1BDBD"
         android:ems="10"
         android:inputType="textPassword"
         android:text="password"
-        android:textColor="#575151"
-        android:textColorHint="#000000"
         app:layout_constraintBottom_toTopOf="@+id/textView5"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/password"
-        app:layout_constraintVertical_bias="0.5" />
+        app:layout_constraintVertical_bias="0.5"
+        app:passwordToggleEnabled='true'>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/passwordCus"
+            android:background="@drawable/rounded_corner"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:inputType="textPassword"
+            android:textColor="@color/black"
+            android:marqueeRepeatLimit="0" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
 
     <TextView
         android:id="@+id/textView5"
@@ -90,7 +102,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextPassword"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCusLayout"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
@@ -102,11 +114,11 @@
         android:textColor="#575151"
         android:textSize="14sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/editTextPassword"
+        app:layout_constraintBottom_toTopOf="@+id/passwordCusLayout"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/useranme"
+        app:layout_constraintTop_toBottomOf="@+id/email"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
@@ -120,7 +132,7 @@
         android:textAlignment="center"
         android:textColor="#FFFFFF"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintBottom_toTopOf="@+id/signin"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -136,7 +148,7 @@
         android:textColor="#CE2B1650"
         android:textSize="48sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/email"
+        app:layout_constraintBottom_toTopOf="@+id/emailText"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
@@ -144,7 +156,7 @@
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/signin"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
@@ -165,13 +177,11 @@
         android:layout_marginBottom="700dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.022"
+        app:layout_constraintHorizontal_bias="0.07"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.211"
+        app:layout_constraintVertical_bias="0.222"
         app:srcCompat="@drawable/flower2" />
-
-
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

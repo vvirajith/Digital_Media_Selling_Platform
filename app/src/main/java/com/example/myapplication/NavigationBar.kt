@@ -24,7 +24,7 @@ class NavigationBar : AppCompatActivity() {
 
         makeCurrentFragment(homeFragment)
 
-        BottomNavigationView.setOnNavigationItemReselectedListener {
+        BottomNavigationView.setOnNavigationItemSelectedListener {
             when(it.itemId){
                 R.id.iconhome -> makeCurrentFragment(homeFragment)
                 R.id.iconcart -> makeCurrentFragment(cartFragment)

@@ -195,11 +195,6 @@
         app:layout_constraintTop_toTopOf="@+id/materialToolbar"
         app:layout_constraintVertical_bias="0.472" />
 
-    <include
-        android:id="@+id/include5"
-        layout="@layout/activity_navigation_bar"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="16dp" />
 
     <ImageView
         android:id="@+id/imageView16"

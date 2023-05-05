@@ -23,7 +23,7 @@
     <color name="light_purple">#438BBCCC</color>
 
     <!-- light background for the app buttons -->
-    <color name="light_grey"></color>
+    <color name="light_grey">#00FFFFFF</color>
 
     <!-- font color -->
     <color name="dark_grey">#575151</color>
