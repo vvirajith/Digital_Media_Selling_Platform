@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".ModifyProfileShop">
+
+
+    <Button
+        android:id="@+id/modifyShopButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:background="@drawable/buttons"
+        android:text="Modify"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/cancelModifyShopButton"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="50dp"
+        android:background="@drawable/buttons"
+        android:text="@string/cancel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/modifyShopButton" />
+
+    <Button
+        android:id="@+id/insertProButtonShop"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_marginBottom="120dp"
+        android:backgroundTint="#4C6793"
+        android:text="@string/upload_profile_photo"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/modifyShopButton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopDescription" />
+
+    <TextView
+        android:id="@+id/fNameShopText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/first_name"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sNameShopText"
+        app:layout_constraintEnd_toStartOf="@+id/fShopName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regShopTopic"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/sNameShop"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="second name"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/shopContNum"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sNameShopText"
+        app:layout_constraintTop_toBottomOf="@+id/fShopName"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/sNameShopText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/second_name"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactNumText"
+        app:layout_constraintEnd_toStartOf="@+id/sNameShop"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fNameShopText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/fShopName"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="first name"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/sNameShop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/fNameShopText"
+        app:layout_constraintTop_toBottomOf="@+id/regShopTopic"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/shopContNum"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="phone number"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/emailShop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactNumText"
+        app:layout_constraintTop_toBottomOf="@+id/sNameShop"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/contactNumText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/phone_number"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/contactEmailText"
+        app:layout_constraintEnd_toStartOf="@+id/sNameShop"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sNameShopText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/emailShop"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="8dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:text="email"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/shopName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/contactEmailText"
+        app:layout_constraintTop_toBottomOf="@+id/shopContNum"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/contactEmailText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/email"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/shopNameText"
+        app:layout_constraintEnd_toStartOf="@+id/shopContNum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactNumText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/shopNameText"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/shop_name"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/shopDesText"
+        app:layout_constraintEnd_toStartOf="@+id/shopName"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/contactEmailText"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <TextView
+        android:id="@+id/shopDesText"
+        android:layout_width="160dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:foregroundGravity="center_vertical"
+        android:text="@string/shop_description"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/shopDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.076"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopNameText"
+        app:layout_constraintVertical_bias="0.28" />
+
+    <EditText
+        android:id="@+id/shopName"
+        android:layout_width="210dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="70dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="shop name"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/shopDescription"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/shopNameText"
+        app:layout_constraintTop_toBottomOf="@+id/emailShop"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/shopDescription"
+        android:layout_width="340dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="24dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="description"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/insertProButtonShop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/shopDesText" />
+
+    <TextView
+        android:id="@+id/regShopTopic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="180dp"
+        android:layout_marginEnd="32dp"
+        android:text="Modify Shop"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/fNameShopText"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="-68dp" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="380dp"
+        android:layout_marginBottom="410dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.651"
+        app:srcCompat="@drawable/flower2" />
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

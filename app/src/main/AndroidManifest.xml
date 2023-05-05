@@ -15,6 +15,12 @@
             android:name=".Blank"
             android:exported="false" />
         <activity
+            android:name=".ModifyProfileShop"
+            android:exported="false" />
+        <activity
+            android:name=".ModifyProfileCus"
+            android:exported="false" />
+        <activity
             android:name=".ViewItemAll"
             android:exported="false" />
         <activity

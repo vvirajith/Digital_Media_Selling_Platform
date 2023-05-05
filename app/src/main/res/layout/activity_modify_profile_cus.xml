@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:backgroundTint="#FFFFFF"
+    tools:context=".RegCustomer">
+
+    <TextView
+        android:id="@+id/regCusTopic2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginBottom="16dp"
+        android:text="Update Profile "
+        android:textColor="#000000"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/imageView30"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/passwordCus2"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="10dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordCus3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordCusText3"
+        app:layout_constraintTop_toBottomOf="@+id/insertProButtonCus2" />
+
+    <EditText
+        android:id="@+id/passwordCus5"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="32dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateProfile"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordCusText5"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCus3" />
+
+    <EditText
+        android:id="@+id/passwordCus3"
+        android:layout_width="225dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="31dp"
+        android:layout_marginBottom="3dp"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordCus5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/passwordCusText4"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCus2" />
+
+    <Button
+        android:id="@+id/cancelUpdateProfile"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="225dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="98dp"
+        android:background="@drawable/buttons"
+        android:text="Update"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCus5" />
+
+    <Button
+        android:id="@+id/updateProfile"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="91dp"
+        android:background="@drawable/buttons"
+        android:text="@string/cancel"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/updateModifyCus"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCusText5" />
+
+    <TextView
+        android:id="@+id/passwordCusText4"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="14dp"
+        android:text="Last Name"
+        android:textAlignment="viewStart"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordCusText5"
+        app:layout_constraintEnd_toStartOf="@+id/passwordCus3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCusText3" />
+
+    <TextView
+        android:id="@+id/passwordCusText5"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="94dp"
+        android:text="Email"
+        android:textAlignment="viewStart"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/updateProfile"
+        app:layout_constraintEnd_toStartOf="@+id/passwordCus5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordCusText4" />
+
+    <TextView
+        android:id="@+id/passwordCusText3"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/first_name"
+        android:textAlignment="viewStart"
+        android:textColor="#575151"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toTopOf="@+id/passwordCusText4"
+        app:layout_constraintEnd_toStartOf="@+id/passwordCus2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/insertProButtonCus2" />
+
+    <Button
+        android:id="@+id/insertProButtonCus2"
+        android:layout_width="wrap_content"
+        android:layout_height="65dp"
+        android:layout_marginStart="109dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="110dp"
+        android:layout_marginBottom="4dp"
+        android:backgroundTint="#4C6793"
+        android:paddingTop="0dp"
+        android:text="+UPDATE PROFILE PHOTO"
+        android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/passwordCus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView30" />
+
+    <ImageView
+        android:id="@+id/imageView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toTopOf="@+id/insertProButtonCus2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/regCusTopic2"
+        tools:srcCompat="@tools:sample/avatars" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

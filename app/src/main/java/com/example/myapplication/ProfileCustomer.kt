@@ -20,7 +20,7 @@ class ProfileCustomer : AppCompatActivity() {
 
         val modifyProfile = findViewById<Button>(R.id.modifyProfileButton);
         modifyProfile.setOnClickListener {
-            val nextPage = Intent(this, Login::class.java);
+            val nextPage = Intent(this, ModifyProfileCus::class.java);
             startActivity(nextPage);
             finish();
         }

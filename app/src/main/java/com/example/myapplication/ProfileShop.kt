@@ -39,6 +39,13 @@ class ProfileShop : AppCompatActivity() {
             finish();
         }
 
+        val modifyProfileShop = findViewById<Button>(R.id.modifyProfileButton);
+        modifyProfileShop.setOnClickListener {
+            val nextPage = Intent(this, ModifyProfileShop::class.java);
+            startActivity(nextPage);
+            finish();
+        }
+
 
     }
 }

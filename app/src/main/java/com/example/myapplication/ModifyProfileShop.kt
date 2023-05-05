@@ -5,22 +5,21 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
 
-class RegShop : AppCompatActivity() {
+class ModifyProfileShop : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_reg_shop)
+        setContentView(R.layout.activity_modify_profile_shop)
 
+        val modifyRegShop = findViewById<Button>(R.id.modifyShopButton);
 
-        val cancelRegShop = findViewById<Button>(R.id.cancelRegShopButton);
-
-        cancelRegShop.setOnClickListener {
-            val nextPage = Intent(this, RegisterAs::class.java);
+        modifyRegShop.setOnClickListener {
+            val nextPage = Intent(this, ProfileShop::class.java);
             startActivity(nextPage);
         }
 
-        val regShop = findViewById<Button>(R.id.regShopButton);
+        val cancelmodifyRegShop = findViewById<Button>(R.id.cancelModifyShopButton);
 
-        regShop.setOnClickListener {
+        cancelmodifyRegShop.setOnClickListener {
             val nextPage = Intent(this, ProfileShop::class.java);
             startActivity(nextPage);
         }
