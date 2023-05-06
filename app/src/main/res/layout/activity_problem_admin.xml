@@ -20,54 +20,20 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
-    <Button
-        android:id="@+id/dashCusNextButton5"
-        android:layout_width="129dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginBottom="100dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Delete"
-        android:textColor="#575151"
-        app:layout_constraintBottom_toTopOf="@+id/dashCusNextButton"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.483"
-        app:layout_constraintStart_toEndOf="@+id/textView14" />
 
-    <Button
-        android:id="@+id/dashCusNextButton4"
-        android:layout_width="129dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Update"
-        android:textColor="#575151"
-        app:layout_constraintBottom_toTopOf="@+id/dashCusNextButton5"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.612"
-        app:layout_constraintStart_toEndOf="@+id/textView14" />
 
-    <Button
-        android:id="@+id/dashCusNextButton3"
-        android:layout_width="129dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginBottom="20dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Update"
-        android:textColor="#575151"
-        app:layout_constraintBottom_toTopOf="@+id/dashCusNextButton2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toEndOf="@+id/textView24"
-        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_edit"
+        tools:layout_editor_absoluteX="306dp"
+        tools:layout_editor_absoluteY="329dp" />
 
     <TextView
         android:id="@+id/textView24"
-        android:layout_width="188dp"
-        android:layout_height="175dp"
+        android:layout_width="374dp"
+        android:layout_height="151dp"
         android:layout_marginTop="40dp"
         android:layout_marginBottom="40dp"
         android:background="@drawable/rounded_corner"
@@ -78,24 +44,18 @@
         android:textStyle="normal|bold"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.273"
+        app:layout_constraintHorizontal_bias="0.567"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13"
-        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintVertical_bias="0.0"
         tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " />
 
-    <Button
-        android:id="@+id/dashCusNextButton2"
-        android:layout_width="129dp"
-        android:layout_height="54dp"
-        android:layout_marginStart="9dp"
-        android:layout_marginBottom="80dp"
-        android:background="@drawable/rounded_corner"
-        android:text="Delete"
-        android:textColor="#575151"
-        app:layout_constraintBottom_toTopOf="@+id/dashCusNextButton4"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView24" />
+    <TextView
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:background="@drawable/baseline_delete"
+        tools:layout_editor_absoluteX="356dp"
+        tools:layout_editor_absoluteY="329dp" />
 
     <TextView
         android:id="@+id/textView13"
@@ -114,22 +74,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView14"
-        android:layout_width="188dp"
-        android:layout_height="175dp"
-        android:layout_marginBottom="10dp"
-        android:background="@drawable/rounded_corner"
-        android:backgroundTint="#F4EDED"
-        android:textAlignment="center"
-        android:textColor="#575151"
-        android:textSize="18sp"
-        android:textStyle="normal|bold"
-        app:layout_constraintBottom_toTopOf="@+id/dashCusNextButton6"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.242"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:text="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. " />
 
     <Button
         android:id="@+id/dashCusNextButton"

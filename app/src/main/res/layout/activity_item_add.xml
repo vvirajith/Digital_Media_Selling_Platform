@@ -229,7 +229,7 @@
 
 
 
-    <include layout="@layout/activity_navigation_bar"/>
+     <include layout="@layout/activity_navigation_bar"/>
 
     <ImageView
         android:id="@+id/imageView24"
