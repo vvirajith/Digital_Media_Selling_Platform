@@ -14,9 +14,17 @@
             android:backgroundTint="#e8e8e8"
             >
 
+            <TextView
+                android:id="@+id/logoutbtn"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/baseline_power"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="20dp"/>
 
             <EditText
-                android:id="@+id/catNameBox"
+                android:id="@+id/lnameText"
                 android:layout_width="130dp"
                 android:layout_height="53dp"
                 android:layout_marginLeft="220dp"
@@ -55,20 +63,19 @@
                 />
 
             <EditText
-                android:id="@+id/fn"
+                android:id="@+id/fnameText"
                 android:layout_width="130dp"
                 android:layout_height="53dp"
                 android:layout_marginStart="60dp"
                 android:layout_marginTop="350dp"
                 android:ems="10"
                 android:inputType="textEmailAddress"
-                android:text="Testing"
                 android:textColor="#575151"
                 android:textStyle="bold"
                 />
 
-            <EditText
-                android:id="@+id/editTextTextPersonName"
+            <TextView
+                android:id="@+id/emailText"
                 android:layout_width="290dp"
                 android:layout_height="53dp"
                 android:layout_marginLeft="60dp"
