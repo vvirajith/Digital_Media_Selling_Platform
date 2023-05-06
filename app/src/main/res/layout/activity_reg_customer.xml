@@ -19,16 +19,13 @@
             android:id="@+id/regCheckBox"
             android:layout_width="320dp"
             android:layout_height="48dp"
-            android:layout_marginStart="40dp"
-            android:layout_marginEnd="32dp"
             android:layout_marginBottom="8dp"
             android:text="@string/terms_conditions"
             android:textColor="#575151"
             android:textSize="16sp"
+            android:layout_marginTop="50dp"
             app:layout_constraintBottom_toTopOf="@+id/regCusButton"
-
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
@@ -36,23 +33,29 @@
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginStart="16dp"
+            android:layout_marginTop="590dp"
             android:layout_marginEnd="16dp"
-            android:layout_marginBottom="11dp"
+            android:layout_marginBottom="8dp"
             android:background="@drawable/buttons"
             android:text="@string/register"
             android:textColor="#FFFFFF"
             app:layout_constraintBottom_toTopOf="@+id/cancelRegCusButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintHorizontal_bias="0.506"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <androidx.appcompat.widget.AppCompatButton
             android:id="@+id/cancelRegCusButton"
             android:layout_width="300dp"
             android:layout_height="60dp"
             android:layout_marginTop="11dp"
+            android:layout_marginBottom="50dp"
             android:background="@drawable/buttons"
+            android:backgroundTint="@color/light_grey"
             android:text="@string/cancel"
-            android:textColor="#FFFEFE"
+            android:textColor="@color/black"
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="@+id/regCusButton"
             app:layout_constraintStart_toStartOf="@+id/regCusButton"
             app:layout_constraintTop_toBottomOf="@+id/regCusButton" />
@@ -136,10 +139,8 @@
             android:id="@+id/rePasswordCusLayout"
             android:layout_width="300dp"
             android:layout_height="60dp"
-
-            android:layout_marginBottom="8dp"
-            app:layout_constraintBottom_toTopOf="@+id/insertProButtonCus"
-
+            android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/regCheckBox"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:passwordToggleEnabled='true'>
@@ -179,25 +180,6 @@
                 android:textColor="@color/black"
                 android:textColorHint="@color/dark_grey" />
         </com.google.android.material.textfield.TextInputLayout>
-
-        <Button
-            android:id="@+id/insertProButtonCus"
-            android:layout_width="wrap_content"
-            android:layout_height="65dp"
-            android:layout_marginStart="16dp"
-            android:layout_marginTop="470dp"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="16dp"
-            android:backgroundTint="#4C6793"
-            android:paddingTop="0dp"
-            android:text="@string/upload_profile_photo"
-            android:textColor="#FFFFFF"
-            app:layout_constraintBottom_toTopOf="@+id/regCheckBox"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.56"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="1.0" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
