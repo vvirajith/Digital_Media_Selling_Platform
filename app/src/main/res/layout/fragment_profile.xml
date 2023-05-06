@@ -1,117 +1,109 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".fragments.ProfileFragment">
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="118dp"
-            android:background="@drawable/borders"
-            android:backgroundTint="#e8e8e8"
-            >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/borders"
+        android:backgroundTint="#e8e8e8"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
-            <TextView
-                android:id="@+id/logoutbtn"
-                android:layout_width="40dp"
-                android:layout_height="40dp"
-                android:background="@drawable/baseline_power"
-                android:layout_alignParentEnd="true"
-                android:layout_marginTop="20dp"
-                android:layout_marginRight="20dp"/>
-
-            <EditText
-                android:id="@+id/lnameText"
-                android:layout_width="130dp"
-                android:layout_height="53dp"
-                android:layout_marginLeft="220dp"
-                android:layout_marginTop="350dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="User"
-                android:textColor="#575151"
-                android:textStyle="bold"
-                />
-
-            <Button
-                android:id="@+id/modifyProfileButton"
-                android:layout_width="170dp"
-                android:layout_height="53dp"
-                android:layout_marginLeft="200dp"
-                android:layout_marginTop="500dp"
-                android:layout_marginBottom="60dp"
-                android:background="@drawable/buttons"
-                android:text="@string/modify_profile"
-                android:textColor="#FFFFFF"
-                />
-
-            <TextView
-                android:id="@+id/textView"
-                android:layout_width="178dp"
-                android:layout_height="57dp"
-                android:layout_marginLeft="120dp"
-                android:layout_marginTop="100dp"
-                android:layout_marginRight="100dp"
-                android:text="@string/profile"
-                android:textAlignment="center"
-                android:textColor="#040000"
-                android:textSize="34sp"
-                android:textStyle="bold"
-                />
-
-            <EditText
-                android:id="@+id/fnameText"
-                android:layout_width="130dp"
-                android:layout_height="53dp"
-                android:layout_marginStart="60dp"
-                android:layout_marginTop="350dp"
-                android:ems="10"
-                android:inputType="textEmailAddress"
-                android:textColor="#575151"
-                android:textStyle="bold"
-                />
-
-            <TextView
-                android:id="@+id/emailText"
-                android:layout_width="290dp"
-                android:layout_height="53dp"
-                android:layout_marginLeft="60dp"
-                android:layout_marginTop="420dp"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:text="testinguser@gmail.com"
-                android:textColor="#575151"
-                android:textStyle="bold"
-                />
-
-            <ImageView
-                android:id="@+id/imageView4"
-                android:layout_width="210dp"
-                android:layout_height="152dp"
-                android:layout_marginStart="100dp"
-                android:layout_marginTop="200dp"
-                android:layout_marginEnd="100dp"
-                />
-
-            <Button
-                android:id="@+id/viewInventoryButtton"
-                android:layout_width="170dp"
-                android:layout_height="53dp"
-                android:layout_marginLeft="30dp"
-                android:layout_marginTop="500dp"
-                android:layout_marginBottom="60dp"
-                android:background="@drawable/buttons"
-                android:text="@string/my_inventory"
-                android:textColor="#FFFFFF"
-                />
-
-        </RelativeLayout>
+        <TextView
+            android:id="@+id/logoutbtn"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/baseline_power" />
 
 
+        <Button
+            android:id="@+id/modifyProfileButton"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="200dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/buttons"
+            android:text="@string/modify_profile"
+            android:textColor="#FFFFFF" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="178dp"
+            android:layout_height="57dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginRight="100dp"
+            android:text="@string/profile"
+            android:textAlignment="center"
+            android:textColor="#040000"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/nameText"
+            android:layout_width="wrap_content"
+            android:layout_height="53dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="164dp"
+            android:layout_marginTop="350dp"
+            android:layout_marginEnd="183dp"
+            android:inputType="textEmailAddress"
+            android:text="username"
+            android:textColor="#575151"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/emailText"
+            android:layout_width="290dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="420dp"
+            android:ems="10"
+            android:text="testinguser@gmail.com"
+            android:textAlignment="center"
+            android:textColor="#575151"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_below="@+id/textView"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="43dp"
+            android:layout_marginEnd="101dp"
+            android:background="@drawable/iconprofile" />
+
+        <Button
+            android:id="@+id/viewInventoryButtton"
+            android:layout_width="170dp"
+            android:layout_height="53dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="500dp"
+            android:layout_marginBottom="60dp"
+            android:background="@drawable/buttons"
+            android:text="@string/my_inventory"
+            android:textColor="#FFFFFF" />
+
+    </RelativeLayout>
 
 
-    </FrameLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
 

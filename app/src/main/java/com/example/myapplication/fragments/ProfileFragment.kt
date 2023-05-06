@@ -13,6 +13,7 @@ import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentProfileBinding
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.database.FirebaseDatabase
+import com.google.firebase.database.ValueEventListener
 
 
 class ProfileFragment : Fragment() {
@@ -21,7 +22,6 @@ class ProfileFragment : Fragment() {
     private val binding get() = _binding!!
 
     private lateinit var firebaseAuth: FirebaseAuth
-    private lateinit var firebaseDatabase: FirebaseDatabase
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -43,7 +43,14 @@ class ProfileFragment : Fragment() {
 
 
         val firebaseUser = firebaseAuth.currentUser
-        val fbDatabase = firebaseDatabase.reference
+        val uid = firebaseUser?.uid
+
+        val ref = FirebaseDatabase.getInstance().getReference("Users")
+      //  ref.child(uid!!)
+       //     .addListenerForSingleValueEvent(ValueEventListener(){
+
+        //    })
+
         if (firebaseUser == null) {
             startActivity(Intent(requireContext(), Login::class.java))
             requireActivity().finish()
