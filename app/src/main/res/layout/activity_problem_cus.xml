@@ -8,6 +8,17 @@
     android:backgroundTint="@color/white"
     tools:context=".ProblemCus">
 
+    <Button
+        android:id="@+id/tempbutton"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:background="@drawable/buttons"
+        android:text="temp"
+        android:textColor="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
         android:id="@+id/textView27"
         android:layout_width="270dp"

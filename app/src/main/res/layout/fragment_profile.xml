@@ -6,6 +6,8 @@
     tools:context=".fragments.ProfileFragment">
 
 
+
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -14,6 +16,17 @@
             android:backgroundTint="#e8e8e8"
             >
 
+
+            <Button
+                android:id="@+id/modifyProfileButton"
+                android:layout_width="170dp"
+                android:layout_height="53dp"
+                android:layout_marginLeft="200dp"
+                android:layout_marginTop="500dp"
+                android:layout_marginBottom="60dp"
+                android:background="@drawable/buttons"
+                android:text="@string/modify_profile"
+                android:textColor="#FFFFFF" />
 
             <EditText
                 android:id="@+id/catNameBox"
@@ -28,17 +41,7 @@
                 android:textStyle="bold"
                 />
 
-            <Button
-                android:id="@+id/modifyProfileButton"
-                android:layout_width="170dp"
-                android:layout_height="53dp"
-                android:layout_marginLeft="200dp"
-                android:layout_marginTop="500dp"
-                android:layout_marginBottom="60dp"
-                android:background="@drawable/buttons"
-                android:text="@string/modify_profile"
-                android:textColor="#FFFFFF"
-                />
+
 
             <TextView
                 android:id="@+id/textView"
