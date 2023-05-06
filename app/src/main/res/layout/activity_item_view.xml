@@ -62,8 +62,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="50dp"
+        android:layout_marginTop="25dp"
         android:text="Test Item 01"
+        android:layout_marginBottom="20dp"
         android:textColor="#575151"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -79,6 +80,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="12dp"
         android:layout_marginBottom="8dp"
         android:text="LKR 590.00"
         android:textColor="#F10000"
@@ -87,7 +89,8 @@
         app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine12"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.068"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine12"
@@ -170,31 +173,33 @@
         android:background="@drawable/buttons"
         android:text="Modify Item"
         android:textColor="#FFFFFF"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine12"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        tools:layout_editor_absoluteY="351dp" />
+        app:layout_constraintStart_toEndOf="@+id/textView2" />
+
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="380dp"
-        android:layout_height="280dp"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/baseline_image"
         app:layout_constraintBottom_toTopOf="@+id/modifyItemButton"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.368"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:srcCompat="@tools:sample/backgrounds/scenic" />
-
+        app:layout_constraintHorizontal_bias="0.547"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <include
         layout="@layout/activity_navigation_bar"
+        android:layout_width="469dp"
+        android:layout_height="62dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

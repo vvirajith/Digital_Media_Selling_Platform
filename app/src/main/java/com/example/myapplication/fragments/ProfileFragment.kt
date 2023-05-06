@@ -43,13 +43,7 @@ class ProfileFragment : Fragment() {
 
 
         val firebaseUser = firebaseAuth.currentUser
-        val uid = firebaseUser?.uid
 
-        val ref = FirebaseDatabase.getInstance().getReference("Users")
-      //  ref.child(uid!!)
-       //     .addListenerForSingleValueEvent(ValueEventListener(){
-
-        //    })
 
         if (firebaseUser == null) {
             startActivity(Intent(requireContext(), Login::class.java))

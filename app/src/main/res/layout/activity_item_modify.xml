@@ -27,25 +27,24 @@
         android:id="@+id/editTextTextPersonName7"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="28dp"
-        android:layout_marginBottom="56dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="68dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="price"
+        android:text="LKR1000.00"
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView12" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
 
     <EditText
         android:id="@+id/editTextTextPersonName6"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginEnd="28dp"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
@@ -56,13 +55,12 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView15" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
 
     <TextView
         android:id="@+id/textView15"
         android:layout_width="130dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="28dp"
         android:layout_marginBottom="8dp"
         android:text="My Category:"
@@ -71,12 +69,13 @@
         app:layout_constraintBottom_toTopOf="@+id/textView12"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName6"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
     <TextView
         android:id="@+id/textView14"
         android:layout_width="130dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="28dp"
         android:layout_marginBottom="8dp"
         android:text="Main Category:"
@@ -85,12 +84,13 @@
         app:layout_constraintBottom_toTopOf="@+id/textView15"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
 
     <TextView
         android:id="@+id/textView13"
         android:layout_width="130dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="28dp"
         android:layout_marginBottom="8dp"
         android:text="Item Description:"
@@ -99,38 +99,39 @@
         app:layout_constraintBottom_toTopOf="@+id/textView14"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView11" />
 
     <TextView
         android:id="@+id/textView12"
         android:layout_width="130dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="28dp"
-        android:layout_marginBottom="60dp"
+        android:layout_marginBottom="68dp"
         android:text="Item Price:"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName7"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.519"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <EditText
         android:id="@+id/editTextTextMultiLine"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
-        android:gravity="start|top"
         android:inputType="textMultiLine"
         android:text="description"
+        android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView13"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
 
     <Button
@@ -139,7 +140,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="70dp"
         android:background="@drawable/buttons"
-        android:text="Delete"
+        android:text="Cancel"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -152,7 +153,7 @@
         android:layout_height="60dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/buttons"
-        android:text="Update"
+        android:text="Done"
         android:textColor="#FFFFFF"
         app:layout_constraintBottom_toTopOf="@+id/button"
         app:layout_constraintEnd_toEndOf="parent"
@@ -179,7 +180,8 @@
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginTop="150dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPersonName"
@@ -187,33 +189,32 @@
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView11"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
 
     <EditText
         android:id="@+id/editTextTextPersonName3"
         android:layout_width="200dp"
         android:layout_height="48dp"
-        android:layout_marginRight="28dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="8dp"
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="main category"
+        android:text="category"
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/textView14"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="130dp"
-        android:layout_height="40dp"
+        android:layout_height="48dp"
         android:layout_marginLeft="28dp"
         android:layout_marginTop="150dp"
         android:layout_marginBottom="8dp"
@@ -227,22 +228,20 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.09" />
 
-
     <include
-        android:id="@+id/include11"
-        layout="@layout/activity_navigation_bar" />
-
-    <ImageView
-        android:id="@+id/imageView25"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="300dp"
-        android:layout_marginBottom="680dp"
-        app:layout_constraintBottom_toBottomOf="parent"
+        layout="@layout/activity_navigation_bar"
+        android:layout_width="427dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="672dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/include11"
-        app:srcCompat="@drawable/flower2" />
+        app:layout_constraintTop_toTopOf="parent" />
+    <ImageView
 
-
+        android:id="@+id/imageView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/purple2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-365dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
