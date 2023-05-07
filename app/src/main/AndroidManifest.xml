@@ -17,7 +17,7 @@
             android:name=".ProblemAdd"
             android:exported="false" />
         <activity
-            android:name=".LoginShop"
+            android:name=".CategoryDisplay"
             android:exported="false" />
         <activity
             android:name=".Blank"
