@@ -4,6 +4,7 @@ import android.app.ProgressDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.util.Patterns
 import android.widget.Button
 import android.widget.Toast
@@ -63,15 +64,12 @@ class Login : AppCompatActivity() {
 
         if(!Patterns.EMAIL_ADDRESS.matcher(email).matches()){
             Toast.makeText(this,"Invalid Email format..", Toast.LENGTH_SHORT).show()
-        }
-
-        if (pass.isEmpty()){
+        } else if (email.isEmpty()){
+            Toast.makeText(this,"Please Enter Email..", Toast.LENGTH_SHORT).show()
+        } else if (pass.isEmpty()){
             Toast.makeText(this,"Please Enter Password..", Toast.LENGTH_SHORT).show()
-        }
-        if (email.isNotEmpty() && pass.isNotEmpty()){
-            loginUser()
         }else{
-            Toast.makeText(this,"Empty Fields Are Not Allowed!!", Toast.LENGTH_SHORT).show()
+            loginUser()
         }
     }
 
@@ -95,14 +93,21 @@ class Login : AppCompatActivity() {
 
         val firebaseUser = firebaseAuth.currentUser!!
 
+
         val ref = FirebaseDatabase.getInstance().getReference("Users")
+
         ref.child(firebaseUser.uid)
             .addListenerForSingleValueEvent(object: ValueEventListener{
                 override fun onDataChange(snapshot: DataSnapshot) {
                     progressDialog.dismiss()
                     val userType= snapshot.child("userType").value
+                    Log.d("checkUser", "userType: $userType")
+
                     if (userType == "user"){
-                        startActivity(Intent(this@Login, Blank::class.java))
+                        val intent = Intent(this@Login, NavigationBar::class.java)
+                        Log.d("checkUser", "Starting NavigationBar activity...")
+                        startActivity(intent)
+
                         finish()
                     }
                     else if (userType == "admin"){
@@ -111,6 +116,7 @@ class Login : AppCompatActivity() {
                     }
                 }
                 override fun onCancelled(error: DatabaseError) {
+
 
                 }
 

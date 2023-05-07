@@ -61,18 +61,12 @@ class RegCustomer : AppCompatActivity() {
             Toast.makeText(this, "Enter Your last name!", Toast.LENGTH_SHORT).show()
         } else if (pass.isEmpty()){
             Toast.makeText(this, "Enter Your Password!", Toast.LENGTH_SHORT).show()
-        }else if (confirmPass.isEmpty()){
+        } else if (confirmPass.isEmpty()){
             Toast.makeText(this, "Confirm Your Password!", Toast.LENGTH_SHORT).show()
-        }
-
-        if (fname.isNotEmpty() && lname.isNotEmpty() && email.isNotEmpty() && pass.isNotEmpty() && confirmPass.isNotEmpty()) {
-            if (pass == confirmPass) {
-                createUserAccount()
-            } else {
-                Toast.makeText(this, "Password mismatched!", Toast.LENGTH_SHORT).show()
-            }
-        }else{
-            Toast.makeText(this,"Empty Fields Are Not Allowed!!", Toast.LENGTH_SHORT).show()
+        } else if(pass != confirmPass) {
+            Toast.makeText(this, "Password mismatched!", Toast.LENGTH_SHORT).show()
+        }else {
+            createUserAccount()
         }
 
 
@@ -102,14 +96,17 @@ class RegCustomer : AppCompatActivity() {
         hashMap["lname"] = lname
         hashMap["profileImg"]= ""
         hashMap["userType"] = "user"
+        hashMap["timestamp"]= timestamp
 
         //send data to db
         val ref = FirebaseDatabase.getInstance().getReference("Users")
         ref.child(uid!!)
             .setValue(hashMap)
             .addOnSuccessListener {
+                progressDialog.dismiss()
                 Toast.makeText(this,"Account created successfully", Toast.LENGTH_SHORT).show()
-                startActivity(Intent(this@RegCustomer, Login::class.java))
+                val intent = Intent(this, Login::class.java)
+                startActivity(intent)
                 finish()
             }
             .addOnFailureListener{ e->
