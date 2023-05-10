@@ -18,6 +18,7 @@
                 android:text="@string/view_items"
                 android:textColor="@color/dark_grey"
                 android:textSize="16sp"
+
                 app:layout_constraintEnd_toStartOf="@+id/addItemButton"
                 app:layout_constraintHorizontal_bias="0.5"
                 app:layout_constraintStart_toStartOf="parent"
