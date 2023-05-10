@@ -13,7 +13,7 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="cardholder"
+
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/enterCvvText"
@@ -36,13 +36,13 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/cvv"
+        android:id="@+id/cvc"
         android:layout_width="116dp"
         android:layout_height="48dp"
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="cvv"
+
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/enterEmailText"
@@ -56,18 +56,18 @@
         android:id="@+id/enterCvvText"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
-        android:text="CVV:"
+        android:text="CVC:"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/cvv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/enterExpText"
+        app:layout_constraintStart_toEndOf="@+id/exppp"
         app:layout_constraintTop_toBottomOf="@+id/cardholdersName"
         app:layout_constraintVertical_bias="0.5" />
 
     <TextView
-        android:id="@+id/enterExpText"
+        android:id="@+id/exppp"
         android:layout_width="110dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
@@ -148,7 +148,6 @@
         android:layout_marginBottom="16dp"
         android:ems="10"
         android:inputType="numberDecimal"
-        android:text="card number"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/enterCardholderText"
@@ -165,7 +164,6 @@
         android:layout_marginBottom="40dp"
         android:ems="10"
         android:inputType="textEmailAddress"
-        android:text="email"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/submitPayment"
@@ -180,14 +178,14 @@
         android:layout_height="48dp"
         android:ems="10"
         android:inputType="date"
-        android:text="exp"
+
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/enterEmailText"
         app:layout_constraintEnd_toStartOf="@+id/cvv"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/enterExpText"
+        app:layout_constraintTop_toBottomOf="@+id/exppp"
         app:layout_constraintVertical_bias="0.5" />
 
     <Button
@@ -205,5 +203,5 @@
 
 
 
-    <include layout="@layout/activity_navigation_bar"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

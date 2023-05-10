@@ -128,7 +128,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/CancelButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:background="@drawable/buttons"
@@ -213,5 +213,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/flower2" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

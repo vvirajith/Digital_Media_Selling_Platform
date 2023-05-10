@@ -8,6 +8,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModel
+import com.example.myapplication.ItemAdd
 import com.example.myapplication.Login
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentProfileBinding
@@ -46,6 +47,18 @@ class ShopProfileFragment : Fragment() {
         binding.logoutbtn.setOnClickListener{
             firebaseAuth.signOut()
             startActivity(Intent(requireContext(), Login::class.java))
+            requireActivity().finish()
+        }
+
+        binding.addItemButton.setOnClickListener{
+
+            startActivity(Intent(requireContext(),  ItemAdd::class.java))
+            requireActivity().finish()
+        }
+
+        binding.addItemButton.setOnClickListener{
+
+            startActivity(Intent(requireContext(),  ItemAdd::class.java))
             requireActivity().finish()
         }
 

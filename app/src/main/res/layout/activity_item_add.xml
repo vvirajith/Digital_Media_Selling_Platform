@@ -19,12 +19,12 @@
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/addItemBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/itemprice"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginEnd="24dp"
@@ -32,16 +32,15 @@
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="LKR1000.00"
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName6" />
+        app:layout_constraintTop_toBottomOf="@+id/mycategory" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName6"
+        android:id="@+id/mycategory"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginEnd="24dp"
@@ -49,13 +48,12 @@
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="my category"
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName7"
+        app:layout_constraintBottom_toTopOf="@+id/itemprice"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3" />
+        app:layout_constraintTop_toBottomOf="@+id/itemcate" />
 
     <TextView
         android:id="@+id/textView15"
@@ -67,7 +65,7 @@
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView12"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName6"
+        app:layout_constraintEnd_toStartOf="@+id/mycategory"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView14" />
@@ -82,7 +80,7 @@
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView15"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName3"
+        app:layout_constraintEnd_toStartOf="@+id/itemcate"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView13" />
@@ -97,7 +95,7 @@
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView14"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextMultiLine"
+        app:layout_constraintEnd_toStartOf="@+id/itemDescrip"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView11" />
@@ -112,13 +110,13 @@
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView16"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName7"
+        app:layout_constraintEnd_toStartOf="@+id/itemprice"
         app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView15" />
 
     <EditText
-        android:id="@+id/editTextTextMultiLine"
+        android:id="@+id/itemDescrip"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginEnd="24dp"
@@ -126,16 +124,15 @@
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textMultiLine"
-        android:text="description"
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName3"
+        app:layout_constraintBottom_toTopOf="@+id/itemcate"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/itemName" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/CancelButton"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="70dp"
@@ -148,14 +145,14 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/addItemBtn"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="24dp"
         android:background="@drawable/buttons"
-        android:text="Done"
+        android:text="add"
         android:textColor="#FFFFFF"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/CancelButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent" />
@@ -176,7 +173,7 @@
         app:layout_constraintVertical_bias="0.106" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/itemName"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginTop="150dp"
@@ -185,17 +182,17 @@
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="name"
+
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextMultiLine"
+        app:layout_constraintBottom_toTopOf="@+id/itemDescrip"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName3"
+        android:id="@+id/itemcate"
         android:layout_width="200dp"
         android:layout_height="48dp"
         android:layout_marginEnd="24dp"
@@ -203,13 +200,13 @@
         android:background="@drawable/rounded_corner"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="category"
+
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName6"
+        app:layout_constraintBottom_toTopOf="@+id/mycategory"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextMultiLine" />
+        app:layout_constraintTop_toBottomOf="@+id/itemDescrip" />
 
     <TextView
         android:id="@+id/textView11"
@@ -222,7 +219,7 @@
         android:textColor="#575151"
         android:textSize="16sp"
         app:layout_constraintBottom_toTopOf="@+id/textView13"
-        app:layout_constraintEnd_toStartOf="@+id/editTextTextPersonName"
+        app:layout_constraintEnd_toStartOf="@+id/itemName"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
@@ -236,14 +233,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
-    <ImageView
 
-        android:id="@+id/imageView24"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@drawable/purple2"
-        tools:layout_editor_absoluteX="0dp"
-        tools:layout_editor_absoluteY="-365dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
