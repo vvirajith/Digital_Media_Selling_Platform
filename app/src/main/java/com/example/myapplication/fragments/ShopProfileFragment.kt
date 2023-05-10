@@ -9,6 +9,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.myapplication.ItemAdd
 import com.example.myapplication.Login
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentProfileBinding
@@ -83,6 +84,13 @@ class ShopProfileFragment : Fragment() {
             startActivity(Intent(requireContext(), Login::class.java))
             requireActivity().finish()
         }
+
+        binding.addItemButton.setOnClickListener{
+
+            startActivity(Intent(requireContext(),  ItemAdd::class.java))
+            requireActivity().finish()
+        }
+
 
     }
 
