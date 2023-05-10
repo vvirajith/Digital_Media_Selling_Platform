@@ -55,7 +55,6 @@ class ProfileFragment : Fragment() {
 
     private fun checkUser() {
 
-
         val firebaseUser = firebaseAuth.currentUser
         val ref = FirebaseDatabase.getInstance().getReference("Users")
 

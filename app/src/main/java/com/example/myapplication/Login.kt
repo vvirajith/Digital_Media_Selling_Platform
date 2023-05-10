@@ -110,7 +110,7 @@ class Login : AppCompatActivity() {
 
                         finish()
                     }
-                    else if (userType == "admin"){
+                    else if (userType == "shop"){
                         startActivity(Intent(this@Login, NavigationBar::class.java))
                         finish()
                     }

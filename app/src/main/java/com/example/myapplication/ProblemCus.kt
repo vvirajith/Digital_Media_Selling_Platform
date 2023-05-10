@@ -13,7 +13,7 @@ class ProblemCus : AppCompatActivity() {
         val submitReview = findViewById<Button>(R.id.tempbutton);
 
         submitReview.setOnClickListener {
-            val nextPage = Intent(this, ItemAdd::class.java);
+            val nextPage = Intent(this, CategoryDisplay::class.java);
             startActivity(nextPage);
         }
 
