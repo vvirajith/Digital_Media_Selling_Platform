@@ -46,7 +46,7 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <Button
-        android:id="@+id/submitReviewButton"
+        android:id="@+id/addReviewBtn"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="32dp"
@@ -72,7 +72,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/reviewField1"
+        android:id="@+id/addReviewBttn"
         android:layout_width="279dp"
         android:layout_height="48dp"
         android:layout_marginBottom="28dp"
@@ -80,7 +80,7 @@
         android:inputType="textPersonName"
         android:text="rating"
         android:textSize="20sp"
-        app:layout_constraintBottom_toTopOf="@+id/submitReviewButton"
+        app:layout_constraintBottom_toTopOf="@+id/addReviewBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.492"
         app:layout_constraintStart_toStartOf="parent" />
@@ -91,7 +91,7 @@
         android:layout_height="40dp"
         android:text="Enter Review"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/reviewField1"
+        app:layout_constraintBottom_toTopOf="@+id/addReviewBttn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent" />

@@ -25,7 +25,7 @@
             android:text="@string/view_items"
             android:textColor="@color/dark_grey"
             android:textSize="16sp"
-            app:layout_constraintEnd_toStartOf="@+id/addItemButton"
+            app:layout_constraintEnd_toStartOf="@+id/addPrButton"
             app:layout_constraintHorizontal_bias="0.5"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/viewCutomCatButton" />
@@ -47,7 +47,7 @@
             app:layout_constraintTop_toBottomOf="@+id/modifyProfileButton" />
 
         <Button
-            android:id="@+id/addItemButton"
+            android:id="@+id/addPrButton"
             android:layout_width="180dp"
             android:layout_height="60dp"
             android:layout_marginTop="8dp"

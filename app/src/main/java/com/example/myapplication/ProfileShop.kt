@@ -17,7 +17,7 @@ class ProfileShop : AppCompatActivity() {
             finish();
         }
 
-        val addItem = findViewById<Button>(R.id.addItemButton);
+        val addItem = findViewById<Button>(R.id.addPrButton);
         addItem .setOnClickListener {
             val nextPage = Intent(this, ItemAdd::class.java);
             startActivity(nextPage);

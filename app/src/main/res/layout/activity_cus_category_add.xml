@@ -19,7 +19,7 @@
         android:text="Category Description:"
         android:textColor="#575151"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/catDesBox"
+        app:layout_constraintBottom_toTopOf="@+id/problemEt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.454"
         app:layout_constraintStart_toStartOf="parent"
@@ -87,7 +87,7 @@
 
 
     <EditText
-        android:id="@+id/catDesBox"
+        android:id="@+id/problemEt"
         android:layout_width="310dp"
         android:layout_height="48dp"
         android:layout_marginStart="50dp"

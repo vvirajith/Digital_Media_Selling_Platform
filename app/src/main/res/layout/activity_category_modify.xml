@@ -86,7 +86,7 @@
 
 
     <EditText
-        android:id="@+id/catDesBox"
+        android:id="@+id/problemEt"
         android:layout_width="340dp"
         android:layout_height="48dp"
         android:layout_marginStart="50dp"
