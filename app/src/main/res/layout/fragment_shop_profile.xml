@@ -7,6 +7,7 @@
     tools:context=".fragments.ShopProfileFragment">
 
 
+
             <Button
                 android:id="@+id/viewItemButton"
                 android:layout_width="180dp"
@@ -97,6 +98,16 @@
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintVertical_bias="0.0">
+
+                <TextView
+                    android:id="@+id/logoutbtn"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/baseline_power"
+                    />
 
                 <TextView
                     android:id="@+id/textView6"
