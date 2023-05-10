@@ -24,7 +24,7 @@
         android:textIsSelectable="false"
         android:textSize="34sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@+id/catDesBox"
+        app:layout_constraintBottom_toTopOf="@+id/problemEt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.493"
         app:layout_constraintStart_toStartOf="parent"
@@ -32,7 +32,7 @@
         app:layout_constraintVertical_bias="0.113" />
 
     <EditText
-        android:id="@+id/catDesBox"
+        android:id="@+id/problemEt"
         android:layout_width="340dp"
         android:layout_height="48dp"
         android:layout_marginStart="50dp"
@@ -42,14 +42,14 @@
         android:inputType="textPersonName"
         android:text="Type Here."
         android:textColor="#575151"
-        app:layout_constraintBottom_toTopOf="@+id/addItemButton"
+        app:layout_constraintBottom_toTopOf="@+id/addPrButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.313"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
-        android:id="@+id/addItemButton"
+        android:id="@+id/addPrButton"
         android:layout_width="300dp"
         android:layout_height="60dp"
         android:layout_marginBottom="100dp"

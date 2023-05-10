@@ -14,7 +14,7 @@
         android:layout_marginBottom="10dp"
         android:textColor="#575151"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/catDesBox"
+        app:layout_constraintBottom_toTopOf="@+id/problemEt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.369"
         app:layout_constraintStart_toStartOf="parent"
@@ -48,7 +48,7 @@
 
 
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/catDesBox"
+        android:id="@+id/problemEt"
         android:layout_width="340dp"
         android:layout_height="60dp"
         android:layout_marginStart="50dp"
