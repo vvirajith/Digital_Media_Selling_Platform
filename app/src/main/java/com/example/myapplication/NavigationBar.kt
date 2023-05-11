@@ -38,6 +38,7 @@ class NavigationBar : AppCompatActivity() {
         val notificationsFragment = NotificationsFragment()
         val profileFragment = ProfileFragment()
         val shopProfileFragment = ShopProfileFragment()
+        val adminProfileFragment = AdminProfileFragment()
 
         makeCurrentFragment(homeFragment)
 
@@ -51,7 +52,10 @@ class NavigationBar : AppCompatActivity() {
                         makeCurrentFragment(profileFragment)
                     } else if (userType == "shop") {
                         makeCurrentFragment(shopProfileFragment)
+                    } else if (userType == "admin") {
+                        makeCurrentFragment(adminProfileFragment)
                     }
+
                 }
             }
             true

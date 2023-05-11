@@ -114,6 +114,11 @@ class Login : AppCompatActivity() {
                         startActivity(Intent(this@Login, NavigationBar::class.java))
                         finish()
                     }
+
+                    else if (userType == "admin"){
+                        startActivity(Intent(this@Login, NavigationBar::class.java))
+                        finish()
+                    }
                 }
                 override fun onCancelled(error: DatabaseError) {
 
