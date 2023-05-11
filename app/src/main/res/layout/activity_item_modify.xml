@@ -9,7 +9,7 @@
     tools:context=".ItemModify">
 
     <TextView
-        android:id="@+id/textView16"
+        android:id="@+id/attachPDFBtn"
         android:layout_width="130dp"
         android:layout_height="40dp"
         android:layout_marginBottom="32dp"
@@ -36,7 +36,7 @@
         android:textAlignment="center"
         android:textColor="#575151"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintBottom_toTopOf="@+id/attachPDFBtn"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/mycategory" />
 
@@ -111,7 +111,7 @@
         android:text="Item Price:"
         android:textColor="#575151"
         android:textSize="16sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView16"
+        app:layout_constraintBottom_toTopOf="@+id/attachPDFBtn"
         app:layout_constraintEnd_toStartOf="@+id/itemprice"
         app:layout_constraintHorizontal_bias="0.519"
         app:layout_constraintStart_toStartOf="parent"

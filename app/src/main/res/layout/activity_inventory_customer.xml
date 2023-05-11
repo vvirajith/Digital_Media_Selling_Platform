@@ -155,7 +155,7 @@
             android:layout_height="match_parent">
 
             <TextView
-                android:id="@+id/textView16"
+                android:id="@+id/attachPDFBtn"
                 android:layout_width="100dp"
                 android:layout_height="60dp"
                 android:padding="10sp"
