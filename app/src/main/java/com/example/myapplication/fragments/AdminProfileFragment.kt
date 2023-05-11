@@ -9,7 +9,9 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
+import com.example.myapplication.AdapterCategory
 import com.example.myapplication.Login
+import com.example.myapplication.ModalCategory
 import com.example.myapplication.R
 import com.example.myapplication.databinding.FragmentAdminProfileBinding
 import com.google.firebase.auth.FirebaseAuth
@@ -31,6 +33,9 @@ class AdminProfileFragment : Fragment() {
     private lateinit var progressDialog: ProgressDialog
     private lateinit var firebaseAuth: FirebaseAuth
 
+    private lateinit var categoryArrayList: ArrayList<ModalCategory>
+    private lateinit var adapterCategory: AdapterCategory
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -42,6 +47,7 @@ class AdminProfileFragment : Fragment() {
         checkUser()
         return binding.root
     }
+
 
     private val userViewModel by lazy {
         ViewModelProvider(this).get(AdminViewModel::class.java)

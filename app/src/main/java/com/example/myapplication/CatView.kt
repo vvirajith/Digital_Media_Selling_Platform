@@ -12,7 +12,6 @@ class CatView : AppCompatActivity() {
 
         val addCategory = findViewById<Button>(R.id.addCatBtn);
 
-
         addCategory.setOnClickListener {
             val nextPage = Intent(this, CategoryAdd::class.java);
             startActivity(nextPage);

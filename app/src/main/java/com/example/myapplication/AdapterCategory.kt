@@ -56,12 +56,13 @@ class AdapterCategory: RecyclerView.Adapter<AdapterCategory.HolderCategory>, Fil
                 .setNegativeButton("Cancel"){a, d->
                     a.dismiss()
                 }
+                .show()
         }
     }
 
     private fun deleteCategory(model: ModalCategory, holder: HolderCategory) {
         val id = model.id
-        val ref = FirebaseDatabase.getInstance().getReference("Categories")
+        val ref = FirebaseDatabase.getInstance().getReference("categories")
         ref.child(id)
             .removeValue()
             .addOnSuccessListener {

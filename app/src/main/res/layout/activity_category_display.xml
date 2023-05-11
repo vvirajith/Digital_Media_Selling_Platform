@@ -6,18 +6,35 @@
     android:layout_height="match_parent"
     tools:context=".CategoryDisplay">
 
+    <Button
+        android:id="@+id/addCatBtn"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/buttontype3"
+        android:text="Add New Category"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/searchET"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
     <EditText
         android:id="@+id/searchET"
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_marginStart="20dp"
+        android:layout_marginTop="112dp"
         android:layout_marginEnd="20dp"
-        android:layout_marginTop="30dp"
+        android:layout_marginBottom="25dp"
         android:background="@drawable/rounded_corner"
         android:drawableStart="@drawable/baseline_search"
         android:hint="Search"
+        android:layout_below="@+id/addCatBtn"
         android:textColorHint="@color/dark_grey"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -25,9 +42,10 @@
         android:id="@+id/categoriesRv"
         android:layout_width="409dp"
         android:layout_height="515dp"
-        android:layout_margin="5dp"
+        android:layout_marginTop="40dp"
         tools:listitem="@layout/row_admin_category"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        android:layout_below="@+id/searchET"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
